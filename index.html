@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Realtime_Openboard</title>
+    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+<body>
+ <div class = "options-cont">
+    <i class="fa-solid fa-bars"></i>
+ </div>
+ <div class = "tools-cont scale-tools">
+    <img class= "pencil" src = "./Pencil.svg">
+    <img class= "eraser" src = "./Eraser.svg">
+    <img class= "download" src = "./Download.svg">
+    <img class= "upload" src = "./Upload.svg">
+    <img class= "stickynote" src = "./StickyNote.svg">
+    <img class= "redo" src = "./Redo.svg">
+    <img class= "undo" src = "./undo.svg">
+ </div>
+
+ <div class = "pencil-cont">
+    <div class = "pencil-widthcont">
+        <input type="range" min = "2" max = "10" value = "3" class="pencil-width">
+    </div>
+    <div class="pencil-colorcont">
+        <div class = "black pencilcolor"></div>
+        <div class = "blue pencilcolor"></div>
+        <div class = "red pencilcolor"></div>
+    </div>
+ </div>
+ <div class="eraser-cont">
+    <input type="range" min = "2" max = "10" value = "3" class = "eraser-width">
+ </div>
+
+ <!-- <div class="sticky-cont">
+    <div class = "header-cont">
+        <div class = "minimize"></div>
+        <div class = "remove"></div>
+    </div>
+    <div class="note-cont">
+        <img src = "url">
+        </div>
+ </div> -->
+ 
+
+    <canvas></canvas>
+
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
